@@ -207,13 +207,13 @@ public class AddressBook {
      */
 
     public static void main(String[] args) {
-        showWelcomeMessage();
+        showToUser(DIVIDER, DIVIDER, VERSION, MESSAGE_WELCOME, DIVIDER);
         processProgramArgs(args);
         loadDataFromStorage();
         while (true) {
             String userCommand = getUserInput();
-            echoUserCommand(userCommand);
-            String feedback = executeCommand(userCommand);
+            echoUserCommand(userCommand = getUserInput(););
+            String feedback = executeCommand(userCommand = getUserInput(););
             showResultToUser(feedback);
         }
     }
@@ -225,10 +225,6 @@ public class AddressBook {
      * signature anyway.
      * ====================================================================
      */
-
-    private static void showWelcomeMessage() {
-        showToUser(DIVIDER, DIVIDER, VERSION, MESSAGE_WELCOME, DIVIDER);
-    }
 
     private static void showResultToUser(String result) {
         showToUser(result, DIVIDER);
